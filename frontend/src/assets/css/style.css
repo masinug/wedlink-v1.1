@@ -1,0 +1,1747 @@
+/* ========================================
+   WEDLINK V1.1
+   CUSTOM CSS
+======================================== */
+
+:root {
+    --wedlink-primary: #b76e79;
+    --wedlink-primary-dark: #965560;
+    --wedlink-secondary: #f5e9e6;
+    --wedlink-accent: #c9a86a;
+    --wedlink-dark: #333333;
+    --wedlink-light: #fffaf8;
+    --wedlink-white: #ffffff;
+}
+
+/* ========================================
+   GLOBAL
+======================================== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--wedlink-dark);
+    background-color: var(--wedlink-light);
+}
+
+a {
+    text-decoration: none;
+}
+
+.wedlink-page {
+    min-height: 100vh;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.wedlink-navbar {
+    background-color: var(--wedlink-white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.wedlink-brand {
+    color: var(--wedlink-primary) !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.wedlink-navbar .nav-link {
+    color: var(--wedlink-dark);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.wedlink-navbar .nav-link:hover {
+    color: var(--wedlink-primary);
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.btn-wedlink {
+    background-color: var(--wedlink-primary);
+    border-color: var(--wedlink-primary);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-wedlink:hover {
+    background-color: var(--wedlink-primary-dark);
+    border-color: var(--wedlink-primary-dark);
+    color: white;
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero-section {
+    background:
+        linear-gradient(
+            rgba(255, 250, 248, 0.92),
+            rgba(255, 250, 248, 0.92)
+        );
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--wedlink-dark);
+}
+
+.hero-title span {
+    color: var(--wedlink-primary);
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #666666;
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: var(--wedlink-secondary);
+    color: var(--wedlink-primary-dark);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+
+.section-padding {
+    padding: 70px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #777777;
+    margin-bottom: 40px;
+}
+
+/* ========================================
+   CATEGORY CARD
+======================================== */
+
+.category-card {
+    background-color: var(--wedlink-white);
+    border: none;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+.category-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.category-card h5 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   VENDOR CARD
+======================================== */
+
+.vendor-card {
+    background-color: var(--wedlink-white);
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.vendor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+.vendor-card-image {
+    height: 200px;
+    background-color: var(--wedlink-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wedlink-primary);
+    font-size: 3rem;
+}
+
+.vendor-card-body {
+    padding: 22px;
+}
+
+.vendor-category {
+    color: var(--wedlink-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.vendor-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.vendor-location {
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.wedlink-footer {
+    background-color: #2f2a2b;
+    color: #ffffff;
+    padding: 45px 0 25px;
+}
+
+.wedlink-footer p {
+    color: #d5d5d5;
+}
+
+.footer-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+}
+
+
+/* ========================================
+   VENDORS PAGE
+======================================== */
+
+.vendors-page {
+    background: var(--wedlink-light);
+    min-height: 100vh;
+}
+
+.vendors-header {
+    padding: 80px 0 50px;
+    background: var(--wedlink-light);
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: var(--wedlink-secondary);
+    color: var(--wedlink-primary-dark);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.vendors-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin-bottom: 15px;
+}
+
+.vendors-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.vendors-filter-section {
+    padding: 30px 0;
+    background: var(--wedlink-white);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.vendors-list-section {
+    padding: 60px 0 90px;
+}
+
+.vendor-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--wedlink-white);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.vendor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+}
+
+.vendor-image {
+    height: 210px;
+    overflow: hidden;
+    background: var(--wedlink-secondary);
+}
+
+.vendor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vendor-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        var(--wedlink-secondary),
+        #f9efed
+    );
+}
+
+.vendor-image-placeholder span {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--wedlink-primary);
+}
+
+.vendor-category {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: var(--wedlink-secondary);
+    color: var(--wedlink-primary-dark);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.vendor-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin-bottom: 10px;
+}
+
+.vendor-description {
+    color: #666;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.vendor-info {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.vendor-info strong {
+    color: var(--wedlink-dark);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .vendors-header {
+        padding: 60px 0 40px;
+    }
+
+    .vendors-title {
+        font-size: 32px;
+    }
+
+    .vendors-subtitle {
+        font-size: 15px;
+    }
+
+    .vendors-list-section {
+        padding: 40px 0 60px;
+    }
+
+}
+
+/* ========================================
+   VENDOR DETAIL PAGE
+======================================== */
+
+.vendor-detail-page {
+    background: var(--wedlink-light);
+    min-height: 100vh;
+}
+
+.back-link {
+    color: var(--wedlink-primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    color: var(--wedlink-primary);
+}
+
+.vendor-detail-card {
+    background: var(--wedlink-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.vendor-detail-image {
+    height: 100%;
+    min-height: 430px;
+    background: var(--wedlink-secondary);
+}
+
+.vendor-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vendor-detail-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        var(--wedlink-secondary),
+        #f9efed
+    );
+}
+
+.vendor-detail-placeholder span {
+    color: var(--wedlink-primary);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.vendor-detail-info {
+    padding: 45px;
+}
+
+.vendor-detail-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin: 15px 0;
+}
+
+.vendor-detail-description {
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.vendor-contact-info {
+    margin-top: 25px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contact-item strong {
+    color: var(--wedlink-dark);
+    margin-bottom: 3px;
+}
+
+.contact-item span {
+    color: #666;
+}
+
+.detail-section {
+    padding-top: 80px;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 12px 0;
+    color: var(--wedlink-dark);
+}
+
+.section-heading p {
+    color: #666;
+}
+
+.package-card {
+    background: var(--wedlink-white);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.package-body {
+    padding: 25px;
+}
+
+.package-body h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.package-price {
+    color: var(--wedlink-primary);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.package-body p {
+    color: #666;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+.btn-outline-wedlink {
+    color: var(--wedlink-primary);
+    border: 1px solid var(--wedlink-primary);
+    background: transparent;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.btn-outline-wedlink:hover {
+    background: var(--wedlink-primary);
+    color: white;
+}
+
+.review-card {
+    background: var(--wedlink-white);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.review-rating {
+    margin-top: 5px;
+    color: #d4a72c;
+    letter-spacing: 2px;
+}
+
+.review-rating span {
+    color: #ddd;
+}
+
+.review-comment {
+    color: #555;
+    line-height: 1.7;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.empty-state {
+    background: var(--wedlink-white);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    color: #777;
+}
+
+.detail-note {
+    margin-top: 80px;
+    padding: 30px;
+    background: var(--wedlink-secondary);
+    border-radius: 18px;
+}
+
+.detail-note h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+}
+
+.detail-note p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    .vendor-detail-info {
+        padding: 30px;
+    }
+
+    .vendor-detail-title {
+        font-size: 30px;
+    }
+
+    .vendor-detail-image {
+        min-height: 280px;
+    }
+
+    .vendor-detail-placeholder {
+        min-height: 280px;
+    }
+
+    .detail-section {
+        padding-top: 55px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+}
+
+/* ========================================
+   ADMIN LOGIN
+======================================== */
+
+.admin-login-page {
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+    background:
+        linear-gradient(
+            135deg,
+            var(--wedlink-light),
+            var(--wedlink-secondary)
+        );
+}
+
+.admin-login-card {
+    background: var(--wedlink-white);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.admin-login-logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--wedlink-primary);
+    margin-bottom: 15px;
+}
+
+.admin-login-card h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin-bottom: 10px;
+}
+
+.admin-login-card > div > p {
+    color: #777;
+    margin-bottom: 0;
+}
+
+.admin-login-card .form-control {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 13px 15px;
+}
+
+.admin-login-card .form-control:focus {
+    border-color: var(--wedlink-primary);
+    box-shadow: 0 0 0 0.2rem rgba(183, 110, 121, 0.15);
+}
+
+@media (max-width: 576px) {
+
+    .admin-login-page {
+        padding: 40px 15px;
+    }
+
+    .admin-login-card {
+        padding: 30px 25px;
+    }
+
+}
+
+/* ========================================
+   ADMIN DASHBOARD
+======================================== */
+
+.admin-page {
+    min-height: 100vh;
+    background: var(--wedlink-light);
+}
+
+.admin-header {
+    padding: 55px 0;
+    background: var(--wedlink-white);
+    border-bottom: 1px solid #eee;
+}
+
+.admin-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin: 12px 0 8px;
+}
+
+.admin-header p {
+    color: #777;
+    margin-bottom: 0;
+}
+
+.admin-content {
+    padding: 55px 0 90px;
+}
+
+.admin-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--wedlink-white);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+}
+
+.admin-stat-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: var(--wedlink-secondary);
+    color: var(--wedlink-primary);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.admin-stat-card span {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.admin-stat-card strong {
+    display: block;
+    color: var(--wedlink-dark);
+    font-size: 28px;
+}
+
+.admin-section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin-bottom: 25px;
+}
+
+.admin-menu-card {
+    height: 100%;
+    padding: 30px;
+    background: var(--wedlink-white);
+    border-radius: 18px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+}
+
+.admin-menu-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: var(--wedlink-secondary);
+    color: var(--wedlink-primary);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.admin-menu-card h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin-bottom: 12px;
+}
+
+.admin-menu-card p {
+    color: #666;
+    line-height: 1.7;
+    min-height: 80px;
+}
+
+.admin-info-box {
+    padding: 30px;
+    background: var(--wedlink-secondary);
+    border-radius: 18px;
+}
+
+.admin-info-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--wedlink-dark);
+    margin-bottom: 15px;
+}
+
+.admin-info-box p {
+    color: #666;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .admin-header h1 {
+        font-size: 30px;
+    }
+
+    .admin-content {
+        padding: 40px 0 60px;
+    }
+
+}
+
+/* =========================================
+   PERAPIHAN KARTU VENDOR
+========================================= */
+
+.vendor-card {
+  overflow: hidden;
+  border: none;
+  border-radius: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vendor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* Vendor image */
+
+.vendor-image {
+  height: 220px;
+  overflow: hidden;
+  background: #f5e9e6;
+}
+
+.vendor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder */
+
+.vendor-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #f5e9e6,
+    #fffaf8
+  );
+  color: var(--wedlink-primary);
+}
+
+.placeholder-icon {
+  font-size: 42px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.placeholder-text {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.vendor-image-placeholder small {
+  margin-top: 5px;
+  color: #777;
+}
+
+/* Vendor category */
+
+.vendor-category {
+  display: inline-block;
+  width: fit-content;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: var(--wedlink-secondary);
+  color: var(--wedlink-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Vendor name */
+
+.vendor-name {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--wedlink-dark);
+}
+
+/* Description */
+
+.vendor-description {
+  color: #666;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+/* Vendor information */
+
+.vendor-info {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #faf7f5;
+}
+
+.vendor-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.vendor-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.vendor-info-label {
+  font-weight: 700;
+  color: var(--wedlink-dark);
+}
+
+/* =========================================
+   DETAIL VENDOR
+========================================= */
+
+.vendor-detail-page {
+  background: var(--wedlink-light);
+  min-height: 100vh;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.vendor-back-link {
+  color: var(--wedlink-primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.vendor-back-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   DETAIL CARD
+========================================= */
+
+.vendor-detail-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   DETAIL IMAGE
+========================================= */
+
+.vendor-detail-image {
+  min-height: 480px;
+  height: 100%;
+  background: #f5e9e6;
+}
+
+.vendor-detail-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================================
+   DETAIL PLACEHOLDER
+========================================= */
+
+.vendor-detail-placeholder {
+  min-height: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #f5e9e6,
+    #fffaf8
+  );
+
+  color: var(--wedlink-primary);
+}
+
+.detail-placeholder-icon {
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.detail-placeholder-title {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.vendor-detail-placeholder small {
+  margin-top: 8px;
+  color: #777;
+}
+
+
+/* =========================================
+   DETAIL CONTENT
+========================================= */
+
+.vendor-detail-content {
+  padding: 45px;
+}
+
+.vendor-detail-title {
+  margin: 12px 0 15px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--wedlink-dark);
+}
+
+.vendor-detail-description {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+
+/* =========================================
+   DETAIL INFO
+========================================= */
+
+.vendor-detail-info {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #faf7f5;
+}
+
+.vendor-detail-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.vendor-detail-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.vendor-detail-info-label {
+  font-weight: 700;
+  color: var(--wedlink-dark);
+}
+
+
+/* =========================================
+   DETAIL ACTION
+========================================= */
+
+.vendor-detail-actions {
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   DETAIL NOTE
+========================================= */
+
+.vendor-detail-note {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-top: 20px;
+  padding: 15px;
+
+  border-left: 4px solid var(--wedlink-accent);
+  border-radius: 8px;
+
+  background: #fffaf8;
+  color: #666;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   DETAIL BLOCK
+========================================= */
+
+.vendor-detail-block {
+  padding: 65px 0 0;
+}
+
+.vendor-detail-section-heading {
+  margin-bottom: 30px;
+}
+
+.vendor-detail-section-heading h2 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+
+  color: var(--wedlink-dark);
+  font-weight: 700;
+}
+
+.vendor-detail-section-heading p {
+  color: #777;
+}
+
+
+/* =========================================
+   PACKAGE CARD
+========================================= */
+
+.vendor-package-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.vendor-package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+}
+
+.vendor-package-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.vendor-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vendor-package-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--wedlink-dark);
+}
+
+.vendor-package-price {
+  margin: 8px 0 12px;
+
+  color: var(--wedlink-primary-dark);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.vendor-package-description {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   OUTLINE BUTTON
+========================================= */
+
+.btn-outline-wedlink {
+  border: 1px solid var(--wedlink-primary);
+  color: var(--wedlink-primary);
+  background: transparent;
+}
+
+.btn-outline-wedlink:hover {
+  background: var(--wedlink-primary);
+  color: var(--wedlink-white);
+}
+
+
+/* =========================================
+   REVIEW
+========================================= */
+
+.vendor-no-review {
+  padding: 25px;
+  border-radius: 14px;
+  background: #faf7f5;
+  text-align: center;
+}
+
+.vendor-review-card {
+  border: none;
+  border-radius: 16px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.vendor-review-name {
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: var(--wedlink-dark);
+}
+
+.vendor-review-rating {
+  color: var(--wedlink-accent);
+  letter-spacing: 2px;
+}
+
+.vendor-review-comment {
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.vendor-bottom-cta {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  padding: 55px 25px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f5e9e6,
+    #fffaf8
+  );
+
+  text-align: center;
+}
+
+.vendor-bottom-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.vendor-bottom-cta h2 {
+  margin-top: 15px;
+  margin-bottom: 12px;
+
+  color: var(--wedlink-dark);
+  font-weight: 700;
+}
+
+.vendor-bottom-cta p {
+  margin-bottom: 25px;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   RESPONSIVE DETAIL
+========================================= */
+
+@media (max-width: 991px) {
+
+  .vendor-detail-image,
+  .vendor-detail-image img,
+  .vendor-detail-placeholder {
+    min-height: 350px;
+  }
+
+  .vendor-detail-content {
+    padding: 30px;
+  }
+
+  .vendor-detail-title {
+    font-size: 1.9rem;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .vendor-detail-content {
+    padding: 25px 20px;
+  }
+
+  .vendor-detail-title {
+    font-size: 1.7rem;
+  }
+
+  .vendor-detail-image,
+  .vendor-detail-image img,
+  .vendor-detail-placeholder {
+    min-height: 280px;
+  }
+
+  .vendor-bottom-cta {
+    padding: 40px 20px;
+  }
+
+}
+
+/* =========================================
+   FILTER BUTTON
+========================================= */
+
+.vendor-filter-button {
+  flex: 1;
+  height: 48px;
+  padding: 0 12px;
+}
+
+/* =========================================
+   HOME / LANDING PAGE
+========================================= */
+
+
+/* =========================================
+   HERO ACTION
+========================================= */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================================
+   CATEGORY LINK
+========================================= */
+
+.category-card-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.category-card-link:hover {
+    color: inherit;
+}
+
+
+/* =========================================
+   CATEGORY CARD
+========================================= */
+
+.category-card {
+    height: 100%;
+    min-height: 180px;
+
+    padding: 25px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background: var(--wedlink-white);
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.category-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+
+.category-card h5 {
+    margin-bottom: 6px;
+
+    color: var(--wedlink-dark);
+
+    font-weight: 700;
+}
+
+
+.category-card p {
+    margin-bottom: 0;
+
+    color: #777;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   HOW WEDLINK WORKS
+========================================= */
+
+.wedlink-how-section {
+    background-color: #fffaf8;
+}
+
+
+.how-card {
+    height: 100%;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background-color: var(--wedlink-white);
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.how-number {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--wedlink-primary);
+
+    color: var(--wedlink-white);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+.how-card h4 {
+    margin-bottom: 12px;
+
+    color: var(--wedlink-dark);
+
+    font-weight: 700;
+}
+
+
+.how-card p {
+    margin-bottom: 0;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   VENDOR CTA
+========================================= */
+
+.vendor-home-cta {
+    padding: 50px 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5e9e6,
+            #fffaf8
+        );
+}
+
+
+.vendor-home-cta .section-description {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   RESPONSIVE HOME
+========================================= */
+
+@media (max-width: 576px) {
+
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .category-card {
+        min-height: 160px;
+    }
+
+    .vendor-home-cta {
+        padding: 40px 20px;
+    }
+
+}
+
+/* =========================================
+   CUSTOMER REVIEW FORM
+========================================= */
+
+.review-form-card {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: var(--wedlink-white);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+}
+
+.review-form-card h3 {
+    color: var(--wedlink-dark);
+    font-weight: 700;
+}
+
+.review-form-card .form-label {
+    font-weight: 600;
+    color: var(--wedlink-dark);
+}
+
+.review-form-card .form-control,
+.review-form-card .form-select {
+    min-height: 48px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.review-form-card textarea.form-control {
+    min-height: 130px;
+}
+
+.review-form-card .form-control:focus,
+.review-form-card .form-select:focus {
+    border-color: var(--wedlink-primary);
+    box-shadow: 0 0 0 0.2rem rgba(183, 110, 121, 0.15);
+}
+
+@media (max-width: 576px) {
+
+    .review-form-card {
+        padding: 25px 20px;
+    }
+
+}
+
+/* =========================================
+   ADMIN DASHBOARD SUMMARY
+========================================= */
+
+.admin-summary-card {
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 18px;
+    background-color: var(--wedlink-white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admin-summary-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f5e9e6;
+    color: var(--wedlink-primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.admin-summary-card span {
+    display: block;
+    margin-bottom: 4px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.admin-summary-card strong {
+    display: block;
+    color: var(--wedlink-dark);
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.admin-summary-card small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+}
+
+@media (max-width: 576px) {
+
+    .admin-summary-card {
+        padding: 20px;
+    }
+
+    .admin-summary-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+/* =========================================
+   ADMIN NAVIGATION
+   KEMBALI KE DASHBOARD
+========================================= */
+
+.admin-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--wedlink-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.admin-back-link:hover {
+    color: var(--wedlink-dark);
+    text-decoration: none;
+    transform: translateX(-3px);
+}

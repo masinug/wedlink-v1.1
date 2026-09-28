@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+
+  vendors Vendor[]
+}
+
+model Vendor {
+  id             Int      @id @default(autoincrement())
+  adminId        Int
+  businessName   String
+  category       String
+  description    String   @db.Text
+  address        String
+  phoneNumber    String
+  whatsappNumber String
+  logoUrl        String?
+  priceRange     String
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  admin    Admin    @relation(fields: [adminId], references: [id], onDelete: Restrict)
+  packages Package[]
+  reviews  Review[]
+}
+
+model Package {
+  id          Int      @id @default(autoincrement())
+  vendorId    Int
+  packageName String
+  price       Decimal  @db.Decimal(12, 2)
+  description String   @db.Text
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  vendor Vendor @relation(fields: [vendorId], references: [id], onDelete: Cascade)
+}
+
+model Review {
+  id           Int      @id @default(autoincrement())
+  vendorId     Int
+  customerName String   @default("Anonim")
+  rating       Int
+  comment      String   @db.Text
+  isApproved   Boolean  @default(false)
+  createdAt    DateTime @default(now())
+
+  vendor Vendor @relation(fields: [vendorId], references: [id], onDelete: Cascade)
+}
